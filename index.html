@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -8,15 +9,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: '珲日青MTR轨道交通服务器',
+      auto2top: true, // 自动滚动到顶部
+      nativeEmoji: true, // 启用github Emoji 渲染
+      search: 'auto',
+      share: {
+        reddit: true,
+        linkedin: true,
+        facebook: true,
+        twitter: true,
+        whatsapp: true,
+        telegram: true,
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 搜索插件 -->
+  <script src="./plugin/search.min.js"></script>
+  <!-- 图片缩放插件 -->
+  <script src="./plugin/zoom-image.min.js"></script>
+  <!-- 一键代码复制插件 -->
+  <script src="./plugin/docsify-copy-code.min.js"></script>
+  <!-- 深色模式切换插件 -->
+  <script src="./plugin/docsify-dark-switcher.js"></script>
+  <!-- 分享插件 -->
+  <!-- <script src="./plugin/docsify-share.js"></script> -->
+
+  <script src="./live2d/autoload.js"></script>
+
 </body>
+
 </html>
