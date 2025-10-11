@@ -1,5 +1,10 @@
-# **珲日青**MTR轨道交通服
-mcmtrdy MC服务器网站仓库
+# 珲日青轨道交通服务器
 
-123
-123
+> [!tip]
+> 本服务器为MTR轨道交通服，基于Minecraft 1.20.1版本。
+>
+
+服务器IP：
+```
+map-mcmtrdy.codegang.top
+```

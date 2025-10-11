@@ -1,0 +1,5 @@
+* [主页](/)
+* [建设标准](standard/index.md)
+  * [普速铁路](standard/standard.md)
+* [工具](tools/index.md)
+  * [服务器地图](https://map-mcmtrdy.codegang.top:2096/)

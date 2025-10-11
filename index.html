@@ -3,33 +3,72 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>珲日青轨道交通服务器</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="/css/vue.css">
+  <link rel="stylesheet" href="/css/dark.css" disabled>
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">加载中……</div>
   <script>
     window.$docsify = {
-      name: '珲日青MTR轨道交通服务器',
+      name: '珲日青轨道交通服务器',
       auto2top: true, // 自动滚动到顶部
       nativeEmoji: true, // 启用github Emoji 渲染
+      loadNavbar: true, // 加载导航栏
+      loadSidebar: true, // 加载侧边栏
       search: 'auto',
-      share: {
+      switchLightDarkMode: { // 深色模式切换插件
+        useSwitchMode: true, // 是否启用切换模式
+        top: 130,
+        right: 26,
+        svgColor: '#7d7b75',
+      },
+      copyCode: {
+        buttonText: '复制代码',
+        errorText: '复制失败',
+        successText: '复制成功',
+      },
+      share: { // 分享插件
         reddit: true,
         linkedin: true,
         facebook: true,
         twitter: true,
         whatsapp: true,
         telegram: true,
-      }
+      },
+      count: { // 统计字数插件
+        countable: true,
+        position: 'top',
+        margin: '10px',
+        float: 'right',
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese',
+        localization: {
+          words: "",
+          minute: ""
+        },
+        isExpected: true
+      },
+      progress: { // 阅读进度条插件
+        position: "top",
+        color: "var(--theme-color,#42b983)",
+        height: "3px",
+      },
+      toc: { // 目录跳转插件
+        scope: '.markdown-section',
+        headings: 'h1, h2, h3, h4, h5, h6',
+        title: '文章目录',
+      },
     }
   </script>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="./docsify@4.js"></script>
   <!-- 搜索插件 -->
   <script src="./plugin/search.min.js"></script>
   <!-- 图片缩放插件 -->
@@ -37,10 +76,16 @@
   <!-- 一键代码复制插件 -->
   <script src="./plugin/docsify-copy-code.min.js"></script>
   <!-- 深色模式切换插件 -->
-  <script src="./plugin/docsify-dark-switcher.js"></script>
-  <!-- 分享插件 -->
-  <!-- <script src="./plugin/docsify-share.js"></script> -->
+  <script src="./plugin/docsify-dark-mode.min.js"></script>
+  <!-- 阅读进度条插件 -->
+  <script src="./plugin/docsify-progress.min.js"></script>
+  <!-- 警告插件 -->
+  <script src="./plugin/docsify-plugin-flexible-alerts.min.js"></script>
+  <!-- 统计字数 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
 
+  <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+  <!-- 目录跳转 -->
   <script src="./live2d/autoload.js"></script>
 
 </body>
