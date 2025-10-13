@@ -6,5 +6,5 @@
 
 服务器IP：
 ```
-map-mcmtrdy.codegang.top
+mcmtrdy.codegang.top
 ```
