@@ -6,7 +6,7 @@
 
 服务器IP：
 ```
-mcmtrdy。codegang。top
+mcmtrdy.codegang.top
 ```
 
 ## 登录服务器
